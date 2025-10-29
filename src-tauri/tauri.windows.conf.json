@@ -3,11 +3,13 @@
     "icon": ["png/weekly_256.ico", "png/weekly_32.ico"],
     "active": true,
     "resources": ["png/weekly_32.ico"],
-    "targets": ["app"],
+    "targets": ["msi"],
     "windows": {
       "digestAlgorithm": "sha256",
-      "wix": null,
-      "wix": null
+      "wix": {
+        "language": ["en-US"],
+        "template": "assets/main.wxs"
+      }
     }
   }
 }
